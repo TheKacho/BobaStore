@@ -1,7 +1,27 @@
+/*html, body{
+    height: 100%;
+}
+
+/*body{
+    display: grid;
+    grid-template-columns: 10em auto 10em;
+    grid-template-rows: min-content auto min-content;
+} */
+
 section{
     margin: 0 auto;
     padding: 1.5rem;
 }
+
+.background-image{
+    background-size: cover;
+}
+
+/*header, footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+*/
 
 .img-responsive{
     max-width: 100%;
@@ -11,4 +31,18 @@ section{
 .row{
     display: flex;
     flex-direction: column;
+}
+
+
+/* Mobile Query */
+
+
+@media screen and (min-width: 800px){
+    .row{
+        flex-direction: row;
+    }
+
+    .col{
+        flex-basis: 50%;
+    }
 }
