@@ -1,8 +1,37 @@
-html, body{
-    height: 100%;
+*{
+    margin:5px;
+    padding: 0;
+    box-sizing: border-box;  
 } 
 
 body{
+    text-align: center;
+}
+
+
+
+/* Nav Bar */
+nav{
+    list-style: none;
+}
+
+
+
+
+/* Header */
+
+
+
+.hero { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer */
+
+/*body{
     margin: 1em;
     display: grid;
     grid: auto-flow min-content / repeat(12, 1fr);
@@ -41,7 +70,7 @@ main{
 }
 
 
-
+/*      (SAVE FOR FUTURE USE?)
 .img-responsive{
     max-width: 100%;
     margin: 0 auto;
@@ -51,6 +80,11 @@ main{
     display: flex;
     flex-direction: row;
 }
+      (SAVE FOR FUTURE USE?)  */
+
+
+
+
 
 /* Gallery 
 
