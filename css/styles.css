@@ -5,7 +5,10 @@
 } 
 
 body{
+    font: normal 18px "Arial", sans-serif ;
     text-align: center;
+    color: #1B4079;
+    background-color: #92DCE5;
 }
 
 
@@ -15,12 +18,33 @@ nav{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
 
 
 
 /* Header */
 
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 100px 25px;
+    color: #A93F55;
+    z-index: 1;
+}
 
+header nav{
+    display: flex;
+}
 
 .hero { 
     display: flex;
