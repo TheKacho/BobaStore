@@ -91,7 +91,7 @@ header{
     padding: 40px 50px 25px;
     color: #A93F55;
     background-color: rgba(0, 0, 0, .7);
-    z-index: auto;
+    z-index: 10;
 }
 
 header h2{
