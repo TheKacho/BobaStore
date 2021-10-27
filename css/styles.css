@@ -1,5 +1,5 @@
 *{
-    margin:5px;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;  
 } 
@@ -14,7 +14,7 @@ body{
 
 
 /* Nav Bar */
-nav{
+ul, nav{
     list-style: none;
 }
 
@@ -25,8 +25,21 @@ a{
     opacity: 0.9;
 }
 
+a:hover{
+    opacity: 1;
+}
 
+.round{
+    border: 6px solid #2196F3;
+    border-radius: 50%;
+}
 
+ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* Header */
 
 header{
@@ -39,7 +52,8 @@ header{
     justify-content: space-around;
     padding: 40px 100px 25px;
     color: #A93F55;
-    z-index: 1;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 10;
 }
 
 header nav{
@@ -52,6 +66,20 @@ header nav{
     align-items: center;
 }
 
+@media(max-width: 1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 10px;
+    }
+}
 
 
 
@@ -97,8 +125,10 @@ main{
 
  /*   (SAVE FOR FUTURE USE?)  */
 .img-responsive{
-    max-width: 50%;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px ;
+    width: 50%;
+    margin: 2 auto;
 }
 
 .row{
@@ -112,18 +142,25 @@ main{
 
 
 
-/* Gallery 
+/* Gallery */
 
-gallery{
+.gallery{
+    background-color: #fff;
+}
+
+.gallery .grid li{
     padding: 20px;
     height: 350px;
-    border-radius: 3px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
+    border-radius: 3px; 
+    justify-content: center;
+    flex-direction: row;
 }
-*/
 
+@media (max-width:1000px){
+    .gallery .grid li{
+        flex-basis: 100%;
+    }
+}
 
 
  /*   Footer  */
