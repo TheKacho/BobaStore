@@ -55,14 +55,7 @@ ul{
     border-radius: 50%;
 }
 
-/*
-ul.grid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-*/
+
 
 
 /* Hero */
@@ -198,25 +191,11 @@ header nav li:last-child{
 .gallery .img-responsive{
     max-width: 75%;
     justify-content: center;
+    align-items: center;
     
 }
 
-/*
-.gallery .grid li{
-    padding: 20px;
-    height: 350px;
-    border-radius: 3px; 
-    justify-content: center;
-    flex-direction: row;
-    background-image: cover;
-}
 
-@media (max-width:1000px){
-    .gallery .grid li{
-        flex-basis: 100%;
-    }
-}
-*/
 
  /*   Footer  */
 
@@ -225,7 +204,7 @@ header nav li:last-child{
     flex-direction: column;
     background-color: #A93F55;
     color: #fff;
-    padding: 80px 0;
+    padding: 70px 0;
     text-align: center;
     align-items: center;
 }
@@ -237,7 +216,9 @@ footer ul{
 }
 
 footer ul li{
-    margin: 5px 20px;
+    margin: 5px 15px auto;
+    justify-content: center;
+    
 }
 
 footer ul li:first-child{
