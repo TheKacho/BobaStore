@@ -192,6 +192,7 @@ header nav li:last-child{
     max-width: 75%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     
 }
 
