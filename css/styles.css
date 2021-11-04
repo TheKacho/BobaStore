@@ -32,7 +32,7 @@ ul{
     cursor: pointer;
     opacity: 1;
     justify-content: center;
-    margin: -5rem;
+    margin: -7rem;
 }
 
 #navbar ul li a{
@@ -155,68 +155,26 @@ header nav li:last-child{
 
 /* ABOUT */
 
-.aboutboba {
+.about-boba {
     border-top: 2em;
     flex-flow: row;
 }
 
-.aboutboba p{
+.about-boba p{
     border-bottom: 1px solid white ;
     padding: 15px 0px;
 }
 
-.aboutboba .bobaimg{
+.about-boba .bobaimg{
     border-radius: 3px;
     justify-self: right;
 }
 
 
-/* body{
-    margin: 1em;
-    display: grid;
-    grid: auto-flow min-content / repeat(12, 1fr);
-    grid-gap: 1em;
-} 
-
-section{
-    margin: 0 auto;
-    padding: 1.5rem;
-}
-
-.background-image{
-    background-size: cover;
-}
-
-header, footer{
-    grid-column-start: 1;
-    grid-column-end: 13;
-}
-
-aside, nav {
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-main{
-    grid-column-start: 5;
-    grid-column-end: 13;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
- 
-#boba1, #boba4{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
 
 
  /*   (SAVE FOR FUTURE USE?)  */
-.img-responsive{
-    max-width: 100%;
-    justify-content: space-around;
-    margin: 2 auto;
-}
+
 
 .row{
     display: flex;
@@ -232,7 +190,15 @@ main{
 /* Gallery */
 
 .gallery{
-    background-color: #fff;
+    display: flex;
+    background-color: #1A77C1;
+  
+}
+
+.gallery .img-responsive{
+    max-width: 75%;
+    justify-content: center;
+    
 }
 
 /*
