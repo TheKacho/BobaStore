@@ -6,10 +6,10 @@
 
 
 var images = document.getElementsByClassName('img-responsive');
-var currentImageIndex = 0;
+var currentImageIndex = 0; //it will start at the first image
 UpdateImages();
 
-function IncrementGallery(){
+function IncrementGallery(){ //this will increase the value by 1, thus changing the image to the next one on the list
     if(currentImageIndex == images.length - 1){
         currentImageIndex = 0;
     }
@@ -17,7 +17,7 @@ function IncrementGallery(){
     UpdateImages();
 }
 
-function DecrementGallery(){
+function DecrementGallery(){ //alternatively, this will decrease the value by 1, going backwards on the list of images
     if(currentImageIndex == 0){
         currentImageIndex = images.length - 1;
     }
