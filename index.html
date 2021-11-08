@@ -16,22 +16,22 @@
 <body>
     <header>
         <h2 class="nav-title">Bubble Boba</h2>
-        <div id="navbar">
-            <ul>
-                <li><a href="#top">Top</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="navbar" id="myNavbar">
+                <a href="#top" class="active">Top</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+                <i class="fa fa-bars"></i>
         </div>
     </header>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
 
     <section class="hero">
         <div class="hero-image"></div>
         <div class="bg-text">
-            <h2>Blurred Background</h2>
             <h1 style="font-size:50px">Welcome to the Bubble Boba!</h1>
             <p>Enjoy your stay!</p>
           </div>
@@ -71,7 +71,7 @@
     </section>
 
 
-    <section class="gallerymain">
+    <section id="gallery" class="gallerymain">
 
         <h2>Gallery!</h2>
         <p>Here is a gallery of the wonderful boba tea combos you might like!</p>

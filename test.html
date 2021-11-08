@@ -13,23 +13,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <section class="hero">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div style="padding-left:16px">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+      </div>
+
+
+<section class="hero">
         <div class="hero-image">
           <h2>Hello</h2>
         </div>
         
         <div class="bg-image"></div>
 
+</section>
+
 <div class="bg-text">
-  <h2>Blurred Background</h2>
-  <h1 style="font-size:50px">Welcome to the Bubble Boba!</h1>
-  <p>Enjoy your stay!</p>
-</div>
-      </section>
+    <h1 style="font-size:50px">Welcome to the Bubble Boba!</h1>
+    <p>Enjoy the view!</p>
+  </div>
 
     <div class="your-class">
         <div>
@@ -54,11 +73,11 @@
         </div>
     </div>
 
-    <script>
+    <script src="js/test.js"></script>
 
-        $('.your-class').slick();
+        <!-- // $('.your-class').slick(); -->
 
-    </script>
+    
 </body>
 
 </html>

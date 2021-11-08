@@ -5,6 +5,19 @@
 // next image. Swiping does work too
 
 
+
+//Responsive Nav Bar
+function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+
+
+
 var images = document.getElementsByClassName('img-responsive');
 var currentImageIndex = 0; //it will start at the first image
 UpdateImages();
@@ -31,3 +44,24 @@ function UpdateImages(){
     }
     images[currentImageIndex].style.display = 'block';
 }
+
+//Back To Top Button
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
