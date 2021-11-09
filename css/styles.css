@@ -19,7 +19,7 @@ li{
 
 /* Nav Bar */
 ul{
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
     display: block;
     position: relative;
@@ -84,7 +84,7 @@ ul{
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
@@ -92,7 +92,7 @@ ul{
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
       position: absolute;
