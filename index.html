@@ -17,12 +17,12 @@
     <header>
         <h2 class="nav-title">Bubble Boba</h2>
         <div class="navbar" id="myNavbar">
-                <a href="#top" class="active">Top</a>
-                <a href="#about">About</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#menu">Menu</a>
-                <a href="#contact">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="#top" class="active">Top</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -35,15 +35,14 @@
         <div class="bg-text">
             <h1 style="font-size:50px">Welcome to the Bubble Boba!</h1>
             <p>Enjoy your stay!</p>
-          </div>
-        
+        </div>
+
     </section>
 
     <section id="about">
         <div class="about-boba">
+            <img class="boba-img" src="/images/human-hand-holding-a-bottle-of-iced-cold-bubble-tea-royalty-free-image-1615834385.jpg"/> 
             <h3>So what is Boba Tea?</h3>
-            <img class="bobaimg" src="images/boba-tea1.jpg"
-                alt="Two glasses of brown sugar bubble tea." title="two glasses of brown sugar bubble tea" />
             <p>Boba tea is a refreshing beverage that contains tapioca pearls mixed in with a tea of your
                 choice!</p>
             <p>Boba tea or bubble tea does come in with many combinations of flavors!</p>
@@ -55,14 +54,18 @@
 
 
     <section id="about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col">
+        <div class="about-us">
+            <div> 
+                <div class="aboutus-img">
+
+                    <img src="/images/human-hand-holding-a-bottle-of-iced-cold-bubble-tea-royalty-free-image-1615834385.jpg" alt="" />
+                
+                </div>
+
                     <h2>About Us!</h2>
                     <p>Our passion is to bring happiness to people with the power of bubble tea!</p>
                     <p>We have recently opened in the city of Louisville!</p>
                     <p>Be sure to visit the new store when we open!</p>
-                </div>
             </div>
         </div>
 
@@ -91,26 +94,47 @@
             <img id="boba4" class="img-responsive" src="images/illustration_1a5ad14874a750bbff917c1b027bb2e5.jpeg"
                 alt="multiple selections of boba tea" title="multiple selections of boba tea" />
         </div>
-        <button onclick="DecrementGallery()">Previous</button>
-        <button onclick="IncrementGallery()">Next</button>
+        <button class="button1" onclick="DecrementGallery()">Previous</button>
+        <button class="button2" onclick="IncrementGallery()">Next</button>
     </section>
 
     <section id="menu">
+        <h2>Menu</h2>
+        <h3>Here is our current selections for boba beverages!</h3>
         <div class="menu-main">
-            <h2>Menu</h2>
-            <h2>Here is our current selections for boba beverages!</h2>
-            <h3>Brown Sugar Boba</h3>
-            <p>The most requested and most refreshing drink!</p>
-            <h3>Green Tea Boba</h3>
-            <p>This delicious drink will keep you chill!</p>
-            <h3>Mango Milk Boba</h3>
-            <p>This is for anyone who loves mango in their day!</p>
-            <h3>Fruit Melody Boba</h3>
-            <p>Can't decide? We got you covered with a bunch of fruits for you!</p>
-            <h3>Black Tea Milk Boba</h3>
-            <p>For anyone who loves their tea to have a stronger taste!</p>
-            <h3>Coffee Mocha Boba</h3>
-            <p>For anyone with a coffee fix will love this!</p>
+
+            <div class="menu-boba">
+                <h3>Brown Sugar Boba</h3>
+                <p>The most requested and most refreshing drink!</p>
+                <h3>Green Tea Boba</h3>
+                <p>This delicious drink will keep you chill!</p>
+                <h3>Mango Milk Boba</h3>
+                <p>This is for anyone who loves mango in their day!</p>
+                <h3>Fruit Melody Boba</h3>
+                <p>Can't decide? We got you covered with a bunch of fruits for you!</p>
+                <h3>Black Tea Milk Boba</h3>
+                <p>For anyone who loves their tea to have a stronger taste!</p>
+                <h3>Coffee Mocha Boba</h3>
+                <p>For anyone with a coffee fix will love this!</p>
+                <h3>Galaxy Star Boba</h3>
+                <p>To travel the unknown! Taste the stars!!!</p>
+                <h3>Autumn Remix</h3>
+                <p>More than just Pumpkin Spice! The coziest drink ever made!</p>
+            </div>
+
+            <div class="menu-other">
+                <h2>Others</h2>
+                <h2>We do have other drinks for your needs!</h2>
+                <h3>Brown Sugar Boba Popsicles</h3>
+                <p>One of our most popular and most requested for the season! Limited run!</p>
+                <h3>Chai Ice Tea</h3>
+                <p>A good mix between sweet and spice with Chai!</p>
+                <h3>Sparkling Galaxy!</h3>
+                <p>This drink is out of this world!!</p>
+                <h3>Fruit Melody Smoothie</h3>
+                <p>An icy, chill mix of a bunch of fruits to kickstart your day!</p>
+        
+            </div>
         </div>
     </section>
 
@@ -119,15 +143,15 @@
     <footer>
 
         <section id="contact">
-            <h2>Contact Us!</h2>
-            <p> Connect to our social networks to get new Boba News!</p>
-            <ul>
-                <li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-snapchat-square"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>
-            </ul>
-            <p>You can also call us at 123-456-7890!</p>
+                <h2>Contact Us!</h2>
+                <p> Connect to our social networks to get new Boba News!</p>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-snapchat-square"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>
+                </ul>
+                <p>You can also call us at 123-456-7890!</p>
         </section>
 
         <p>This site is a project in progress!</p>

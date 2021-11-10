@@ -7,8 +7,8 @@ html {
   }
 
 body{
-    font-family: Arial, Helvetica, sans-serif; ;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    /* text-align: center; */
     color: #1B4079;
     background-color: #F58848;
 }
@@ -244,22 +244,50 @@ header nav li:last-child{
 /* ABOUT */
 
 .about-boba {
-    /* border-top: 2em; */
-    flex-flow: row;
+    text-align: center;
+    border: 5px solid #FFFFFF;
+    padding: 20px;
+    
+    /* flex-flow: row; */
 }
+
+.about-boba .boba-img{
+    /* background-image: url("../images/human-hand-holding-a-bottle-of-iced-cold-bubble-tea-royalty-free-image-1615834385.jpg"); */
+    
+    min-width: 150px;
+    float: right;
+} 
+
+
 
 .about-boba p{
-    border-bottom: 1px solid white ;
-    padding: 15px 0px;
-}
-
-.about-boba .bobaimg{
-    border-radius: 3px;
-    justify-self: right;
+    /* border-bottom: 1px solid white ; */
+    padding: 10px 0px;
 }
 
 
+@media screen and (max-width: 700px){
+    .about-boba {
+        /* display: block; */
+        background-image: url("../images/human-hand-holding-a-bottle-of-iced-cold-bubble-tea-royalty-free-image-1615834385.jpg");
+        background-size: cover;
+        min-height: 150px;
+    }
+}
 
+
+
+/* About Us */
+.about-us{
+    text-align: center;
+    padding: 10px;
+}
+
+.about-us .aboutus-img{
+    padding: 15px;
+    background-position: center;
+    background-size: cover;
+}
 
 
 /* Back to Top Button */
@@ -287,8 +315,13 @@ header nav li:last-child{
 
 
 /* Gallery */
+.gallerymain{
+    text-align: center;
+    padding: 10px;
+}
 
 .gallery{
+    
     display: flex;
     background-color: #40274A;
   
@@ -304,12 +337,66 @@ header nav li:last-child{
 
 
 
+/* Mobile Query for Gallery*/
+@media screen and (max-width: 700px){
+    .gallery{
+        display: block;
+        
+    }
+    .gallery .img-responsive{
+        display: block;
+        border-radius: 40%;
+        color: inherit;
+        min-height: 200px;
+    }
+}
+    
+
+/* Menu */
+
+#menu{
+    text-align: center;
+}
+
+.menu-main{
+    display: flex;
+    text-align: center;
+    
+}
+
+.menu-main .menu-boba{
+   float: left;
+   color: #FFFFFF;
+   background-color: #7c4c22;
+   flex: 15%;
+   padding: 10px 35px 10px;
+}
+
+.menu-main .menu-other{
+    /* float: right; */
+    flex: 15%;
+    color: #FFFFFF;
+    background-color: #9b714d;
+    padding: 10%;
+}
+
+@media screen and (max-width: 700px){
+    .menu-main{
+        display: block; 
+        flex-direction: row; 
+        align-content: center;
+        text-align: center;
+    }
+}
+
+
+
  /*   Footer  */
 
- footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #A93F55;
+footer{
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: #22333B;
     color: #fff;
     padding: 70px 0;
     text-align: center;
@@ -345,7 +432,7 @@ footer p{
 }
 
 footer li a{
-    color: #094074;
+    color: #255397;
     justify-content: center;
     align-items: center;
 
@@ -355,7 +442,7 @@ footer li a{
 /* Mobile Query */
 
 
-@media screen and (min-width: 800px){
+/* @media screen and (min-width: 800px){
     .row{
         flex-direction: row;
     }
@@ -363,4 +450,4 @@ footer li a{
     .col{
         flex-basis: 50%;
     }
-}
+} */
