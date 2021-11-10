@@ -46,7 +46,7 @@ ul{
     justify-content: space-between; */
     /* margin: -7rem; */
     overflow: hidden;
-    background-color: #333;
+    background-color: #423767;
 }
 
 .navbar a{
@@ -72,7 +72,7 @@ ul{
     /* color: white;
     opacity: 0.5; */
     background-color: #ddd;
-    color: black;
+    color: #453F78;
 }
 
 .navbar a.active{
@@ -290,7 +290,7 @@ header nav li:last-child{
 
 .gallery{
     display: flex;
-    background-color: #1A77C1;
+    background-color: #40274A;
   
 }
 
