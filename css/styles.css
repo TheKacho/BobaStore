@@ -107,6 +107,15 @@ ul{
   }
 
 
+/* @media screen and (max-width: 1000px) {
+    .navbar.responsive a{
+        float:none;
+        display:block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
 
 
 
@@ -224,10 +233,11 @@ header nav li:last-child{
 
 
 
-@media(max-width: 1000px){
+@media screen and (max-width: 1000px){
     header{
-        /* flex-direction: row; */
-       
+        /* margin-left: auto;
+        margin-right: auto;
+        */
     }
 }
 
@@ -251,11 +261,9 @@ header nav li:last-child{
     /* flex-flow: row; */
 }
 
-.about-boba .boba-img{
-    /* background-image: url("../images/human-hand-holding-a-bottle-of-iced-cold-bubble-tea-royalty-free-image-1615834385.jpg"); */
-    
-    min-width: 150px;
-    /* float: right; */
+.about-boba .aboutboba-img { 
+    max-width: 100%;
+    height: auto;
 } 
 
 
@@ -269,13 +277,29 @@ header nav li:last-child{
 @media screen and (max-width: 700px){
     .about-boba {
         /* display: block; */
-        background-image: url("../images/human-hand-holding-a-bottle-of-iced-cold-bubble-tea-royalty-free-image-1615834385.jpg");
-        background-size: cover;
+        
         min-height: 150px;
     }
 }
+    .about-boba .aboutboba-img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: 3px solid black;
+    }
 
 
+/* @media screen and (max-width: 1000px){
+    .about-boba{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-boba .aboutboba-img{
+        max-width: 100%;
+        height: auto;
+
+} */
 
 /* About Us */
 .about-us{
@@ -332,6 +356,8 @@ header nav li:last-child{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
     
 }
 
@@ -345,17 +371,39 @@ header nav li:last-child{
     }
     .gallery .img-responsive{
         display: block;
-        border-radius: 40%;
+        border-radius: 10%;
         color: inherit;
         min-height: 200px;
     }
+}
+
+/* @media screen and (max-width: 1000px){
+    .gallery{
+        display: block;
+    }
+    .gallerymain{
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .gallery .img-responsive{
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: inherit;
+        margin: 0 auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+         */
 }
     
 
 /* Menu */
 
 #menu{
+    justify-content: center;
     text-align: center;
+    
 }
 
 .menu-main{
@@ -439,15 +487,3 @@ footer li a{
 }
 
 
-/* Mobile Query */
-
-
-/* @media screen and (min-width: 800px){
-    .row{
-        flex-direction: row;
-    }
-
-    .col{
-        flex-basis: 50%;
-    }
-} */
