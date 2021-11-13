@@ -9,6 +9,39 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+
+/* sidebar demo*/
+.sidebar{
+  float: left;
+  border: 5px solid #453F78;
+}
+
+#side-text .testimg{
+  display: none;
+  visibility: hidden;
+}
+
+#side-text .testimg2{
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  #side-text .testimg{
+    display: block;
+    visibility: visible;
+    max-width: 20%;
+  }
+}
+
+@media screen and (max-width: 725px){
+  #side-text .testimg2{
+    display: block;
+    visibility: visible;
+    max-width: 50%;
+    float: right;
+  }
+}
 /* Back to Top Button */
 
 #myBtn {
