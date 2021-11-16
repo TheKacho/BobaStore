@@ -41,44 +41,25 @@ li{
 
 /* Nav Bar */
 ul{
-    /* margin: 0 auto; */
     text-align: center;
     display: block;
     position: relative;
     min-width: 350px;
-    /* list-style: none; */
+    
 }
 
 .nav-title{
     flex-grow: 1;
-    color: #094074;
+    color: #453F78;
 }
 
 .navbar{
-    /* display: flex;
-    z-index: 1; */
-    /* top: 75px; */
-    /* left: 0; */
-    /* right: 0; */
-    /* vertical-align: middle;
-    overflow-y: hidden;
-    text-decoration-color: turquoise;
-    cursor: pointer;
-    opacity: 1;
-    justify-content: space-between; */
-    /* margin: -7rem; */
+
     overflow: hidden;
     background-color: #423767;
 }
 
 .navbar a{
-    /* color: #061555;
-    justify-content: center;
-    align-items: center; */
-    /* margin: -1%; */
-    /* display: flex;
-    width: 100%;
-    height: 100%; */
     float: left;
     display: block;
     color: #f2f2f2;
@@ -106,38 +87,6 @@ ul{
     display: none;
 }
 
-@media screen and (max-width: 700px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 700px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
-
-/* @media screen and (max-width: 1000px) {
-    .navbar.responsive a{
-        float:none;
-        display:block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-} */
 
 
 
@@ -162,8 +111,6 @@ ul{
     filter: blur(5px);
     -webkit-filter: blur(5px);
 
-    /* background-size: cover; */
-    /* background-position: center; */
     
     /* mininum height */
     min-height: 450px;
@@ -172,7 +119,7 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* display: block; */
+    
   }
   
  /* Position text in the middle of the page/image */
@@ -193,42 +140,27 @@ ul{
   }
 
 
-  
-
-/* 
-.hero .hero-boba{
-    position: relative;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    
-    background-color: #1A77C1;
-} */
-
 .hero .hero-boba:after{
     content: '';
     position: fixed;
     top: 0;
     left: 0;
     
-}*/
+}
 
 
 /* Header */
 
 header{
-    /* display: flex; */
-    /* position: fixed; */
+
     top: 0;
     left: 0;
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    /* padding: 40px 50px 25px; */
+
     color: #A93F55;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: #FFFFFF;
     z-index: 10;
 }
 
@@ -255,32 +187,12 @@ header nav li:last-child{
 
 
 
-@media screen and (max-width: 1000px){
-    header{
-        /* margin-left: auto;
-        margin-right: auto;
-        */
-    }
-}
-
-@media(max-width: 700px){
-    header{
-        flex-direction: column;
-    }
-    header h2{
-        /* margin-bottom: 10px; */
-    }
-}
-
-
 /* ABOUT */
 
 .about-boba {
     text-align: center;
     border: 5px solid #FFFFFF;
     padding: 20px;
-    
-    /* flex-flow: row; */
 }
 
 .about-boba .aboutboba-img { 
@@ -293,41 +205,9 @@ header nav li:last-child{
     visibility: hidden;
 }
 
-.about-boba p{
-    /* border-bottom: 1px solid white ; */
+.about-boba p {
     padding: 10px 0px;
 }
-
-
-@media screen and (min-width: 700px){
-    .about-boba {
-        /* display: block; */
-        
-        min-height: 150px;
-    }
-}
-    .about-boba .aboutboba-img{
-        max-width: 80%;
-        height: auto;
-        border-radius: 10px;
-        border: 3px solid black;
-    }
-
-
-@media screen and (max-width: 425px){
-   
-
-    #about .aboutboba-img{
-        display: inline-block;
-        visibility: collapse;
-} 
-
-    #about .aboutboba-img2{
-        display: block;
-        visibility: visible;
-        max-width: 100%;
-        border: 4px solid #453F78;
-    }
 
 
 
@@ -374,42 +254,6 @@ header nav li:last-child{
 
 
 
-/* Mobile Query for Gallery*/
-@media screen and (min-width: 700px){
-    .gallery{
-        display: block;
-        text-align: center;
-        
-    }
-    .gallery .img-responsive{
-        display: block;
-        border-radius: 10%;
-        color: inherit;
-        max-height: 200px;
-    }
-}
-
-/* @media screen and (max-width: 1000px){
-    .gallery{
-        display: block;
-    }
-    .gallerymain{
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .gallery .img-responsive{
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        color: inherit;
-        margin: 0 auto;
-        overflow-x: hidden;
-        overflow-y: hidden;
-         */
-}
-    
-
 /* Menu */
 
 #menu{
@@ -433,20 +277,10 @@ header nav li:last-child{
 }
 
 .menu-main .menu-other{
-    /* float: right; */
     flex: 15%;
     color: #FFFFFF;
     background-color: #9b714d;
     padding: 10%;
-}
-
-@media screen and (max-width: 700px){
-    .menu-main{
-        display: block; 
-        flex-direction: row; 
-        align-content: center;
-        text-align: center;
-    }
 }
 
 
@@ -463,7 +297,6 @@ footer{
 
 footer ul{
     display: flex;
-    /* margin-bottom: 25px; */
     font-size: 32px;
     padding: 1em;
 }
@@ -497,3 +330,114 @@ footer li a{
 }
 
 
+
+
+
+/* Media Queries */
+
+
+
+/* Over 700px */
+
+@media screen and (max-width: 700px) {
+
+    /* NavBar */
+
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+ 
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+
+/* About Boba */
+    .about-boba {
+        /* display: block; */
+        
+        min-height: 150px;
+    }
+
+    .about-boba .aboutboba-img{
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        border: 3px solid black;
+    }
+
+
+/* Gallery */
+
+    .gallery{
+        display: block;
+    }
+    .gallerymain{
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .gallery .img-responsive{
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: inherit;
+        margin: 0 auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+}
+
+/* Menu */
+    .menu-main{
+        display: block; 
+        flex-direction: row; 
+        align-content: center;
+        text-align: center;
+}
+
+
+
+/* Media Screen of 425px (Mobile) */
+@media screen and (max-width: 425px){
+
+    /* About Boba */
+
+    #about .aboutboba-img{
+        display: block;
+        visibility: hidden;
+    }
+
+    #about .aboutboba-img2{
+        display: block;
+        visibility: visible;
+        max-width: 100%;
+        border: 4px solid #453F78;
+    }
+
+    /* Gallery */
+
+    .gallery{
+        display: block;
+        text-align: center;
+    }
+
+    .gallery .img-responsive{
+        display: block;
+        border-radius: 10%;
+        color: inherit;
+        max-height: 200px;
+    }
+
+}
+
+}
