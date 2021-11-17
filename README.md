@@ -4,7 +4,7 @@ The Boba Bubble!
 
 This site that I have created is focused on a fictional Boba Tea shop.
 
-The media queries are set with the max width of 425px and 700px. The purposes of those two sizes are to change the "About Boba" images from one image to another when the screen is at a the certain pixel size (either goes below 425px or at least 700px). One image will be set to "hidden" while the other is displayed and vice versa.
+The media queries are set with the max width of 500px and 700px. The purposes of those two sizes are to change the "About Boba" images from one image to another when the screen is at a the certain pixel size (either goes below 500px or at least 700px). One image will be set to "hidden" while the other is displayed and vice versa.
 
 The Javascript feature is used for the responsive "Navigation bar" at the top of the page, the "Gallery" portion of the site, the "Back to Top" button. 
 
