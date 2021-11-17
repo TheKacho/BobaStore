@@ -8,7 +8,7 @@ html {
 
 body{
     font-family: Arial, Helvetica, sans-serif; 
-    /* text-align: center; */
+    text-align: center;
     color: #1B4079;
     background-color: #F58848;
 }
@@ -339,7 +339,7 @@ footer li a{
 
 /* Over 700px */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
 
     /* NavBar */
 
@@ -364,7 +364,7 @@ footer li a{
 
 /* About Boba */
     .about-boba {
-        /* display: block; */
+        display: block;
         
         min-height: 150px;
     }
@@ -395,6 +395,7 @@ footer li a{
         margin: 0 auto;
         overflow-x: hidden;
         overflow-y: hidden;
+        max-height: 350px;
 }
 
 /* Menu */
