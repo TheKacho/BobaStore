@@ -339,7 +339,7 @@ footer li a{
 
 /* Over 700px */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 
     /* NavBar */
 
@@ -410,8 +410,8 @@ footer li a{
 
 
 
-/* Media Screen of 425px (Mobile) */
-@media screen and (max-width: 425px){
+/* Media Screen of 425px or smaller (Mobile) */
+@media screen and (max-width: 500px){
 
     /* About Boba */
 
